@@ -1,0 +1,2415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themesdesign.in/harold/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Dec 2024 15:55:47 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>EliteCode Solutions - Landing Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EliteCode Solutions - Innovative web and app development services." />
+    <meta name="keywords" content="EliteCode Solutions, web development, app development, custom solutions" />
+    <meta content="Fazal - EliteCode Solutions" name="author" />
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta charset="utf-8" />
+    <title>Custom Navbar with Dropdowns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <style>
+        .dropdown-hover:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap-style" />
+
+    <!-- Material Icon Css -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+
+    <!-- Unicon Css -->
+    <link rel="stylesheet" href="../../../unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/tiny-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/tiny-slider.css.html" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
+
+    <!-- light-dark mode button -->
+    <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-end">
+        <i class="uil uil-brightness mode-dark mx-auto"></i>
+        <i class="uil uil-moon bx-spin mode-light"></i>
+    </a>
+
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container-fluid custom-container">
+            <a class="navbar-brand logo text-uppercase" href="index.html">
+                <img src="images/logo-light.png" class="logo-light" alt="" height="34">
+                <img src="images/logo-dark.png" class="logo-dark" alt="" height="34">
+            </a>
+
+            <button class="navbar-toggler me-3 order-2 ms-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto navbar-center">
+                    <li class="nav-item active">
+                        
+                        
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#aboutme" class="nav-link ">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#service" class="nav-link ">Service</a>
+                    </li>
+
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#work" class="nav-link ">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testi" class="nav-link">Testimonial</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <!--end navbar-nav-->
+              <!-- Sign up and Login Buttons -->
+<div class="d-flex align-items-center gap-2 ms-auto ps-lg-0">
+    <a href="#" class="btn btn-dark rounded-pill my-3 my-lg-0" data-bs-toggle="modal" data-bs-target="#exampleModal" id="signupButton">Sign up,👥</a>
+    <a href="#" class="btn btn-dark rounded-pill my-3 my-lg-0" data-bs-toggle="modal" data-bs-target="#exampleModal" id="loginButton">Login,👤</a>
+</div>
+</div>
+</div>
+</nav>
+<!-- Navbar End -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content glowing-box">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form class="row g-3 needs-validation" id="modalForm">
+                    <div id="nameFields">
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">First name <span class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom01" required>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Last name <span class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom02" required>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustomEmail" class="form-label">Email <span class="text-primary">*</span></label>
+                        <input type="email" class="form-control" id="validationCustomEmail" required>
+                        <div class="valid-feedback">Looks good!</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustomPassword" class="form-label">Password <span class="text-primary">*</span></label>
+                        <input type="password" class="form-control" id="validationCustomPassword" required>
+                        <div class="invalid-feedback">Please provide a valid password.</div>
+                    </div>
+                    <div id="loginOptions" class="d-none">
+                        <div class="col-md-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Remember Me</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="#" class="text-decoration-none text-primary" id="forgotPasswordLink" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Forgot Password?</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12" id="messageField">
+                        <label for="validationTextarea" class="form-label">Message <span class="text-primary">*</span></label>
+                        <textarea class="form-control" id="validationTextarea" rows="4" required></textarea>
+                        <div class="invalid-feedback">You must enter a message before submitting.</div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit" id="submitButton">Sign Up,👥</button>
+                    </div>
+                    <!-- Social Login Buttons -->
+                    <div class="col-12 text-center mt-3">
+                        <button type="button" class="btn btn-danger w-100 my-2" id="googleLoginButton">
+                            <i class="fab fa-google"></i> Login with Google
+                        </button>
+                        <button type="button" class="btn btn-primary w-100 my-2" id="facebookLoginButton">
+                            <i class="fab fa-facebook"></i> Login with Facebook
+                        </button>
+                        <button type="button" class="btn btn-dark w-100 my-2" id="githubLoginButton">
+                            <i class="fab fa-github"></i> Login with GitHub
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content glowing-box">
+            <div class="modal-header">
+                <h5 class="modal-title" id="forgotPasswordModalLabel">Forgot Password</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form class="row g-3 needs-validation" id="forgotPasswordForm">
+                    <div class="col-12">
+                        <label for="forgotPasswordEmail" class="form-label">Email Address <span class="text-primary">*</span></label>
+                        <input type="email" class="form-control" id="forgotPasswordEmail" placeholder="Enter your registered email" required>
+                        <div class="invalid-feedback">Please provide a valid email.</div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary w-100 mt-3" type="submit">Send Reset Link</button>
+                    </div>
+                    <div class="col-12 text-center mt-3">
+                        <a href="#" class="text-decoration-none" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal">Back to Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal End -->
+
+<style>
+/* Add glowing animation to the modal box */
+.glowing-box {
+    box-shadow: 0 0 15px 5px rgba(0, 123, 255, 0.5);
+    animation: glow 1.5s infinite alternate;
+    transition: background-color 0.3s ease;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 15px 5px rgba(0, 123, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 25px 10px rgba(0, 123, 255, 0.8);
+    }
+}
+
+/* Change box color on hover */
+.glowing-box:hover {
+    background-color: var(--random-color);
+}
+</style>
+
+<script>
+// FontAwesome (Add this to the <head> section of your HTML)
+document.head.innerHTML += '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">';
+
+document.querySelector(".glowing-box").addEventListener("mouseover", function () {
+    const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    this.style.backgroundColor = randomColor;
+});
+
+// Change modal content dynamically based on which button is clicked
+document.getElementById("signupButton").addEventListener("click", function () {
+    document.getElementById("exampleModalLabel").textContent = "Sign up";
+    document.getElementById("nameFields").style.display = "flex";
+    document.getElementById("messageField").style.display = "block";
+    document.getElementById("loginOptions").classList.add("d-none");
+    document.getElementById("submitButton").textContent = "Sign Up,👥";
+});
+
+document.getElementById("loginButton").addEventListener("click", function () {
+    document.getElementById("exampleModalLabel").textContent = "Login";
+    document.getElementById("nameFields").style.display = "none";
+    document.getElementById("messageField").style.display = "none";
+    document.getElementById("loginOptions").classList.remove("d-none");
+    document.getElementById("submitButton").textContent = "Login,👤";
+});
+
+// Forgot Password Form Submission
+document.getElementById("forgotPasswordForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const email = document.getElementById("forgotPasswordEmail").value;
+    
+    if (email) {
+        alert(`Password reset link has been sent to ${email}`);
+        document.getElementById("forgotPasswordForm").reset();
+        const modal = bootstrap.Modal.getInstance(document.getElementById("forgotPasswordModal"));
+        modal.hide();
+    } else {
+        alert("Please enter a valid email address.");
+    }
+});
+
+// Handle Google login click
+document.getElementById("googleLoginButton").addEventListener("click", function() {
+    alert("Google login functionality will be here.");
+    // Integrate Google login API here
+});
+
+// Handle Facebook login click
+document.getElementById("facebookLoginButton").addEventListener("click", function() {
+    alert("Facebook login functionality will be here.");
+    // Integrate Facebook login API here
+});
+
+// Handle GitHub login click
+document.getElementById("githubLoginButton").addEventListener("click", function() {
+    alert("GitHub login functionality will be here.");
+    // Integrate GitHub login API here
+});
+</script>
+
+    <!-- home section -->
+    <section class="home" id="home" style="background-image: url(images/bg-home.png);">
+        <!-- start container -->
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="home-slider" id="home-slider">
+                        <div class="item">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="content-item">
+                                        <p class="text-warning fw-semibold mb-0">Hello! I AM</p>
+                                        <div class="home-title mb-0 fw-bold h1">
+                                            <span class="typewrite " data-period="2000"
+                                                data-type='[ "Fazal Abbas.","Java Backend Developer." ]'>
+                                                <span class="wrap text-dark"></span>
+                                            </span>
+                                        </div>
+                                        <p class="mt-3 text-muted">I am a professional Java Backend Developer with expertise in creating scalable, secure, and efficient backend solutions tailored to your business needs. With a focus on performance, reliability, and user-centric design, I offer a range of services that ensure your applications deliver exceptional functionality and seamless experiences.</p>
+
+                                        <div class="icon-item mt-4">
+                                            <div class="d-flex">
+                                                <a href="#">
+                                                    <div class="social-icon facebook avatar-sm">
+                                                        <i class="mdi mdi-facebook"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon instagram avatar-sm">
+                                                        <i class="mdi mdi-instagram"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon twitter avatar-sm">
+                                                        <i class="mdi mdi-twitter"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon linkedin avatar-sm">
+                                                        <i class="mdi mdi-linkedin"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon pinterest avatar-sm">
+                                                        <i class="mdi mdi-pinterest"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="home-link d-inline-block mt-5">
+                                            <div class="d-flex align-items-center">
+                                                <div class="btn-link ">
+                                                    <a href="#" class="text-dark h6">
+                                                        <div class="read-link btn-link-warning"><span>See my work
+                                                            </span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="btn-link-icon">
+                                                    <img src="images/home/right-arrow.png" alt=""
+                                                        class="img-fluid ms-3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="my-image">
+                                        <img src="images/home/home.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="content-item">
+                                        <p class="text-primary fw-semibold mb-0">Hello! I AM</p>
+                                        <div class="home-title mb-0 text-dark fw-bold h1">
+                                            <span class="typewrite " data-period="2000"
+                                                data-type='[ "Fazal Abbas.","Devloper." ]'>
+                                                <span class="wrap text-dark"></span>
+                                            </span>
+                                        </div>
+                                        <p class="mt-3 text-muted">I am Fazal, a passionate and dedicated Java Backend Developer with expertise in building scalable, secure, and efficient software solutions. With a strong foundation in Java programming and hands-on experience in modern frameworks like Spring Boot and Hibernate, I specialize in creating robust backends that power dynamic web and mobile applications.</p>
+
+                                        <div class="icon-item mt-4">
+                                            <div class="d-flex">
+                                                <a href="#">
+                                                    <div class="social-icon facebook avatar-sm">
+                                                        <i class="mdi mdi-facebook"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon instagram avatar-sm">
+                                                        <i class="mdi mdi-instagram"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon twitter avatar-sm">
+                                                        <i class="mdi mdi-twitter"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon linkedin avatar-sm">
+                                                        <i class="mdi mdi-linkedin"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon pinterest avatar-sm">
+                                                        <i class="mdi mdi-pinterest"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="home-link d-flex align-items-center mt-5">
+                                            <div class="btn-link">
+                                                <a href="#" class="text-dark h6">
+                                                    <div class="read-link"><span>See my work </span></div>
+                                                </a>
+                                            </div>
+                                            <div class="btn-link-icon">
+                                                <img src="images/home/right-arrow.png" alt="" class="img-fluid ms-3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="my-image">
+                                        <img src="images/home/home-2.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="content-item">
+                                        <p class="text-danger fw-semibold mb-0">Hello! I AM</p>
+                                        <div class="home-title mb-0 text-dark fw-bold h1">
+                                            <span class="typewrite " data-period="2000"
+                                                data-type='[ "Fazal Abbas.","Web Developer." ]'>
+                                                <span class="wrap text-dark"></span>
+                                            </span>
+                                        </div>
+                                        <p class="mt-3 text-muted">I am Fazal, a skilled and passionate Web Developer with expertise in crafting modern, user-friendly, and responsive websites. Combining creative design with robust functionality, I specialize in delivering web solutions that not only look great but also provide an exceptional user experience.</p>
+
+                                        <div class="icon-item mt-4">
+                                            <div class="d-flex">
+                                                <a href="#">
+                                                    <div class="social-icon facebook avatar-sm">
+                                                        <i class="mdi mdi-facebook"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon instagram avatar-sm">
+                                                        <i class="mdi mdi-instagram"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon twitter avatar-sm">
+                                                        <i class="mdi mdi-twitter"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon linkedin avatar-sm">
+                                                        <i class="mdi mdi-linkedin"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon pinterest avatar-sm">
+                                                        <i class="mdi mdi-pinterest"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="home-link d-flex align-items-center mt-5">
+                                            <div class="btn-link">
+                                                <a href="#" class="text-dark h6">
+                                                    <div class="read-link btn-link-denger"><span>See my work </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="btn-link-icon">
+                                                <img src="images/home/right-arrow.png" alt="" class="img-fluid ms-3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="my-image">
+                                        <img src="images/home/home-3.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="content-item">
+                                        <p class="text-blue fw-semibold mb-0">Hello! I AM</p>
+                                        <h1 class="home-title mb-0 text-dark fw-bold">
+                                            <span class="typewrite " data-period="2000"
+                                                data-type='[ "Fazal Abbas.","Frontend Developer." ]'>
+                                                <span class="wrap text-dark"></span>
+                                            </span>
+                                        </h1>
+                                        <p class="mt-3 text-muted">I am Fazal, a passionate Frontend Developer dedicated to creating visually appealing, user-friendly, and responsive interfaces for web and mobile applications. With a keen eye for design and a strong technical foundation, I specialize in building seamless user experiences that enhance engagement and usability.</p>
+
+                                        <div class="icon-item mt-4">
+                                            <div class="d-flex">
+                                                <a href="#">
+                                                    <div class="social-icon facebook avatar-sm">
+                                                        <i class="mdi mdi-facebook"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon instagram avatar-sm">
+                                                        <i class="mdi mdi-instagram"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon twitter avatar-sm">
+                                                        <i class="mdi mdi-twitter"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon linkedin avatar-sm">
+                                                        <i class="mdi mdi-linkedin"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon pinterest avatar-sm">
+                                                        <i class="mdi mdi-pinterest"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="home-link d-flex align-items-center mt-5">
+                                            <div class="btn-link">
+                                                <a href="#" class="text-dark h6">
+                                                    <div class="read-link btn-link-blue"><span>See my work </span></div>
+                                                </a>
+                                            </div>
+                                            <div class="btn-link-icon">
+                                                <img src="images/home/right-arrow.png" alt="" class="img-fluid ms-3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="my-image">
+                                        <img src="images/home/home-4.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end home section -->
+
+
+
+    <!-- about-me section -->
+    <section class="section about-me" id="aboutme">
+        <!-- container -->
+        <div class="container">
+            <div class="about-box">
+                <div class="row">
+
+                    <div class="col-lg-6 position-relative">
+                        <div class="image-round"></div>
+                        <div class="about-image p-4 pb-0">
+                            <img src="images/about.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="about-item p-5">
+                            <h2 class="display-5 fw-semibold">About Me</h2>
+                            <p class="text-muted fs-14"><mark>It is a long-established fact that a reader will be distracted by the readable content of a page when looking at its layout. As a Software Developer, Web Developer, Graphics Designer, Java Backend Developer, and Frontend Developer, I believe the point of using normal distribution of letters, as opposed to using 'Content here, content here', is to make it look like readable English, helping maintain focus on the layout...</mark></p>
+
+                            <ul class="nav nav-pills mb-3 mt-4 pt-2" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Skills</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Experience</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Education</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-projects-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-projects" type="button" role="tab"
+                                        aria-controls="pills-projects" aria-selected="false">Projects</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-certifications-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-certifications" type="button" role="tab"
+                                        aria-controls="pills-certifications" aria-selected="false">Certifications</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-info-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact-info" type="button" role="tab"
+                                        aria-controls="pills-contact-info" aria-selected="false">Contact Info</button>
+                                </li>
+                            </ul>
+                            
+                            <!-- Tab Content -->
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <!-- Skills Content Here -->
+                                    <h4 class="text-warning">Skills</h4> <!-- Heading color changed to yellow -->
+                                    <ul>
+                                        <li>Software Development</li>
+                                        <li>Web Development (HTML, CSS, JavaScript, React, Angular)</li>
+                                        <li>Java Backend Development (Spring Boot, Hibernate)</li>
+                                        <li>Graphics Design (Adobe Photoshop, Illustrator)</li>
+                                        <li>Database Management (MySQL, MongoDB)</li>
+                                        <li>Version Control (Git)</li>
+                                        <li>Responsive Web Design</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <!-- Experience Content Here -->
+                                    <h4 class="text-info">Experience</h4> <!-- Heading color changed to blue -->
+                                    <p>As a Software Developer, I have worked on various projects that involve both front-end and back-end development. My experience includes:</p>
+                                    <ul>
+                                        <li>Developing full-stack web applications using Java (Spring Boot) and React</li>
+                                        <li>Building user interfaces that are both functional and visually appealing</li>
+                                        <li>Integrating third-party APIs and developing custom APIs for dynamic web applications</li>
+                                        <li>Collaborating with cross-functional teams to deliver projects on time</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                    <!-- Education Content Here -->
+                                    <h4 class="text-danger">Education</h4> <!-- Heading color changed to red -->
+                                    <ul>
+                                        <li><strong>Bachelor's in Software Engineering</strong> -</li>
+                                        <li><strong>Java Programming Certification</strong> -</li>
+                                        <li><strong>Web Development Bootcamp</strong> -</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="pills-projects" role="tabpanel" aria-labelledby="pills-projects-tab">
+                                <!-- Projects Content Here -->
+<h4 class="text-success">Projects</h4> <!-- Heading color changed to green -->
+<ul>
+    <li><strong>Project 1:</strong> A fully functional e-commerce platform built with React and Spring Boot, featuring user authentication, a product catalog, and secure payment integration.</li>
+    <li><strong>Project 2:</strong> A custom Content Management System (CMS) built with Java and Angular, providing an intuitive interface for managing content and user roles.</li>
+    <li><strong>Project 3:</strong> A mobile-responsive website for a local business, utilizing HTML, CSS, and JavaScript for an engaging user experience.</li>
+    <li><strong>Project 4:</strong> A Java-based inventory management system built with Spring Boot and Hibernate, allowing real-time updates, stock management, and detailed reporting features.</li> <!-- Added Java Backend Project -->
+    <li><strong>Project 5:</strong> A RESTful API built using Java (Spring Boot) to manage customer data, integrating authentication and authorization mechanisms, and providing secure access to critical information.</li> <!-- Added Java Backend Project -->
+</ul>
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-certifications" role="tabpanel" aria-labelledby="pills-certifications-tab">
+                                    <!-- Certifications Content Here -->
+                                    <h4 class="text-primary">Certifications</h4> <!-- Heading color changed to blue -->
+                                    <ul>
+                                        <li><strong>Java Programming Certification</strong> -</li>
+                                        <li><strong>Full-Stack Web Development Certification</strong> -</li>
+                                        <li><strong>Adobe Certified Associate in Graphic Design</strong> -</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact-info" role="tabpanel" aria-labelledby="pills-contact-info-tab">
+                                    <!-- Contact Information Content Here -->
+                                    <h4 class="text-muted">Contact Information</h4> <!-- Heading color changed to gray -->
+                                    <p>Feel free to get in touch with me for collaborations or inquiries:</p>
+                                    <ul>
+                                        <li><strong>Email:</strong> fazalmalikc9@gmail.com</li>
+                                        <li><strong>Phone:</strong> 03205484196</li>
+                                        <li><strong>LinkedIn:</strong> [Your LinkedIn URL]</li>
+                                        <li><strong>Instagram:</strong> [Your Instagram URL]</li>
+                                        <li><strong>Twitter:</strong> [Your Twitter URL]</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                            
+                                    <div class="skill-item mt-4 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Development</h6>
+                                            <h6>96%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="65"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="skill-item mt-4 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Web Design</h6>
+                                            <h6>95%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="skill-item mt-4 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Front end developer</h6>
+                                            <h6>86%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Additional Skills -->
+                                    <div class="skill-item mt-4 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Java Backend Development</h6>
+                                            <h6>96%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="skill-item mt-4 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Web Development</h6>
+                                            <h6>85%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="skill-item mt-4 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Graphics Design</h6>
+                                            <h6>90%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                            
+                               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="experience">
+        <div class="row position-relative">
+            <div class="col-2">
+                <div class="border-left"></div>
+            </div>
+            <div class="col-10">
+                <div class="mt-4 pt-2">
+                    <h5>Software Developer</h5>
+                    <p class="text-muted fs-15">2020-Present (4+ years of Experience)</p>
+                    <p class="text-muted fs-15">Worked on various full-stack web applications using Java, React, and Spring Boot. Involved in both front-end and back-end development with a focus on creating efficient, scalable solutions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row position-relative">
+            <div class="col-2">
+                <div class="border-left"></div>
+            </div>
+            <div class="col-10">
+                <div class="mt-4 pt-2">
+                    <h5>Java Backend Developer</h5>
+                    <p class="text-muted fs-15">2021-Present (3+ years of Experience)</p>
+                    <p class="text-muted fs-15">Focused on building RESTful APIs and integrating databases using Java (Spring Boot, Hibernate). Ensured the back-end of web applications was scalable, secure, and highly performant.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row position-relative">
+            <div class="col-2">
+                <div class="border-left"></div>
+            </div>
+            <div class="col-10">
+                <div class="mt-4 pt-2">
+                    <h5>Front-End Developer</h5>
+                    <p class="text-muted fs-15">2019-2021 (2 years of Experience)</p>
+                    <p class="text-muted fs-15">Developed engaging, responsive user interfaces using HTML, CSS, JavaScript, and React. Worked closely with design teams to implement pixel-perfect and user-friendly interfaces.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row position-relative">
+            <div class="col-2">
+                <div class="border-left"></div>
+            </div>
+            <div class="col-10">
+                <div class="mt-4 pt-2">
+                    <h5>Web Developer</h5>
+                    <p class="text-muted fs-15">2018-2020 (2 years of Experience)</p>
+                    <p class="text-muted fs-15">Worked extensively with HTML, CSS, JavaScript, and various front-end frameworks like Angular and React to build dynamic, user-friendly websites. Optimized websites for performance, SEO, and mobile responsiveness.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row position-relative">
+            <div class="col-2">
+                <div class="border-left"></div>
+            </div>
+            <div class="col-10">
+                <div class="mt-4 pt-2">
+                    <h5>Graphics Designer</h5>
+                    <p class="text-muted fs-15">2016-2018 (2 years of Experience)</p>
+                    <p class="text-muted fs-15">Created visually appealing designs for websites, social media, and marketing materials. Focused on user experience and brand consistency across all projects.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab">
+                                    <div class="experience">
+                                        <div class="row position-relative">
+                                            <div class="col-2">
+                                                <div class="border-left"></div>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="mt-4 pt-2">
+                                                    <h5>Basic Computer Application</h5>
+                                                    <p class="text-muted fs-15 mb-0">2021-2024 (3 year)</p>
+                                                    <p class="text-muted fs-15 mb-0">There are many variations of
+                                                        passages of Lorem Ipsum available.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row position-relative">
+                                            <div class="col-2">
+                                                <div class="border-left"></div>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="mt-4 pt-2">
+                                                    <h5>Mastar Computer Application</h5>
+                                                    <p class="text-muted fs-15 mb-0">2022-2024 (2 year)</p>
+                                                    <p class="text-muted fs-15">The majority have fered altation in some
+                                                        form, by injmour, or randomised words which don't look even
+                                                        slightlievable. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end about-me -->
+     
+    <style>
+        /* General Reset */
+        body, h1, h2, h3, h4, h5, h6, p {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Service Section Styling */
+        .section {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+
+        .service .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .fs-15 {
+            font-size: 15px;
+        }
+
+        .mb-0 {
+            margin-bottom: 0;
+        }
+
+        .para-width {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Service Box Styling */
+        .service-box {
+            width: 100%;  /* Ensures full width in each column */
+            height: 100%; /* Ensures all boxes have the same height */
+            min-height: 320px;  /* Ensure a minimum height for each box */
+            background-color: #06fff6;
+            transition: all 0.3s ease;
+            border-radius: 10px;
+        }
+
+      /* Unique Colors for Boxes */
+.service-box:nth-child(1) {
+    background-color: #ffffff;  /* White */
+}
+
+.service-box:nth-child(2) {
+    background-color: #fdfbfc;  /* Very light pink */
+}
+
+.service-box:nth-child(3) {
+    background-color: #e8f5e9;  /* Light green */
+}
+
+.service-box:nth-child(4) {
+    background-color: #ffecb3;  /* Light yellow */
+}
+
+.service-box:nth-child(5) {
+    background-color: #f0f4c3;  /* Light lime */
+}
+
+.service-box:nth-child(6) {
+    background-color: #e3f2fd;  /* Light blue */
+}
+
+.service-box:nth-child(7) {
+    background-color: #fff9c4;  /* Light gold */
+}
+
+.service-box:nth-child(8) {
+    background-color: #c8e6c9;  /* Light teal */
+}
+
+/* Box Shadows for Better Appearance */
+.box-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Glowing/Blending Effect on Hover */
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: glow-animation 1.5s infinite alternate;  /* Glow effect */
+}
+
+/* Glow Animation */
+@keyframes glow-animation {
+    0% {
+        box-shadow: 0 0 8px #ffffff, 0 0 12px #ffffff, 0 0 16px #ffffff, 0 0 20px #0afdb4;
+    }
+    50% {
+        box-shadow: 0 0 8px #ffecb3, 0 0 12px #ffecb3, 0 0 16px #ffecb3, 0 0 20px #ffecb3;
+    }
+    100% {
+        box-shadow: 0 0 8px #f0f4c3, 0 0 12px #f0f4c3, 0 0 16px #f0f4c3, 0 0 20px #f0f4c3;
+    }
+}
+
+/* Additional Customization for Visual Appeal (Optional) */
+.service-box:nth-child(odd) {
+    border: 2px solid #fff;  /* Add border for odd boxes */
+}
+
+.service-box:nth-child(even) {
+    border: 2px solid #000;  /* Add border for even boxes */
+}
+
+/* Service Items Text */
+.service-box h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.service-box p {
+    font-size: 1rem;
+}
+
+.text-muted {
+    color: #0afdb4;
+}
+
+.research i {
+    font-size: 24px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+        /* Spacing and Centering */
+        .container .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .col-lg-4 {
+            width: 30%;
+            margin-bottom: 30px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .col-lg-4 {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- start service -->
+    <section class="section service" id="service">
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h6 class="mb-0 text-muted fs-15">WHAT WE OFFER</h6>
+                        <h2>Affordable Services</h2>
+                        <p class="para-width text-muted mb-0 fs-15">A Private Limited Company is the most commonly preferred business structure in London, UK and Pakistan. Limited liability is, in fact, the sole form of company structure permitted under Maltese company law. This structure provides shareholders with protection, as their liability is confined to the amount of capital they have invested in the company.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2 service-box">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-purple text-center">
+                                <i class="mdi mdi-cached fs-24 text-purple"></i>
+                            </div>
+                            <h6 class="mt-4">API Development 🚀, 🌐, 🔗</h6>
+                            <p class="text-muted fs-15">We Create RESTful APIs and integrate third-party APIs using Java frameworks like Spring Boot and Spring MVC.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2 service-box">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-danger text-center">
+                                <i class="mdi mdi-comment-plus-outline fs-24 text-danger"></i>
+                            </div>
+                            <h6 class="mt-4">Database Management 🗂️,🔁, 🗑️</h6>
+                            <p class="text-muted fs-15">We are proficient in database design, optimization, and management using MySQL, PostgreSQL, and MongoDB.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2 service-box">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-success text-center">
+                                <i class="mdi mdi-cached fs-24 text-success"></i>
+                            </div>
+                            <h6 class="mt-4">Microservices Architecture 🚀,⚡, 🌐</h6>
+                            <p class="text-muted fs-15">We develop modular, distributed systems using Java, ensuring scalability and fault tolerance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="info-item box-shadow mt-4 pt-2 service-box">
+                            <div class="p-4">
+                                <div class="research avatar-sm bg-soft-purple text-center">
+                                    <i class="mdi mdi-cached fs-24 text-purple"></i>
+                                </div>
+                                <h6 class="mt-4">Security🔑,🛡️</h6>
+                                <p class="text-muted fs-15">We Implement robust authentication and authorization mechanisms, including JWT, OAuth 2.0, and encryption techniques.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="info-item box-shadow mt-4 pt-2 service-box">
+                            <div class="p-4">
+                                <div class="research avatar-sm bg-soft-danger text-center">
+                                    <i class="mdi mdi-comment-plus-outline fs-24 text-danger"></i>
+                                </div>
+                                <h6 class="mt-4">Integration Expertise 🌐,⚙️</h6>
+                                <p class="text-muted fs-15">Seamless integration with payment gateways, messaging queues (e.g., RabbitMQ, Kafka), and external services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="info-item box-shadow mt-4 pt-2 service-box">
+                            <div class="p-4">
+                                <div class="research avatar-sm bg-soft-warning text-center">
+                                    <i class="mdi mdi-layers fs-24 text-warning"></i>
+                                </div>
+                                <h6 class="mt-4">UI/UX Design ⚙️</h6>
+                                <p class="text-muted fs-15">We design intuitive interfaces with a focus on user experience and accessibility. HTML, CSS, and JavaScript: Building clean, efficient, and scalable code using foundational web technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2 service-box">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-danger text-center">
+                                <i class="mdi mdi-comment-plus-outline fs-24 text-danger"></i>
+                            </div>
+                            <h6 class="mt-4">Responsive Web Design📱,💻</h6>
+                            <p class="text-muted fs-15">We create mobile-first, cross-platform websites using modern frameworks and libraries.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2 service-box">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-primary text-center">
+                                <i class="mdi mdi-chart-line fs-24 text-primary"></i>
+                            </div>
+                            <h6 class="mt-4">Mobile App Developer 📱,🌐</h6>
+                            <p class="text-muted fs-15">We specialize in creating innovative, user-friendly, and high-performing mobile applications tailored to meet specific user needs. Our expertise ensures seamless functionality and exceptional user experiences across platforms.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2 service-box">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-warning text-center">
+                                <i class="mdi mdi-layers fs-24 text-warning"></i>
+                            </div>
+                            <h6 class="mt-4">Web Development ⚙️,📱,💻</h6>
+                            <p class="text-muted fs-15">We specialize in building dynamic, visually appealing, and high-performing websites that meet modern user expectations. My approach combines technical expertise with creativity to deliver scalable and responsive web solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2 service-box">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-blue text-center">
+                                <i class="mdi mdi-inbox-arrow-up fs-24 text-blue"></i>
+                            </div>
+                            <h6 class="mt-4">Application Maintenance ⚙️,🔄</h6>
+                            <p class="text-muted fs-15">We debug, identify bottlenecks, and optimize existing backend applications for performance. Refactoring legacy codebases to align with modern practices and frameworks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2 service-box">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-primary text-center">
+                                <i class="mdi mdi-chart-line fs-24 text-primary"></i>
+                            </div>
+                            <h6 class="mt-4">Security Implementation 🔑,🛡️,🌐</h6>
+                            <p class="text-muted fs-15">We implement authentication and authorization mechanisms. Securing backend services against common vulnerabilities like SQL injection, XSS, and CSRF. Encrypting sensitive data using SSL/TLS and secure hashing algorithms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2 service-box">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-pink text-center">
+                                <i class="mdi mdi-email-open fs-24 text-pink"></i>
+                            </div>
+                            <h6 class="mt-4">Backend Development 📱,💻,🛡️,🌐</h6>
+                            <p class="text-muted fs-15">We build robust and scalable server-side applications using Java. Designing and implementing RESTful APIs for seamless communication between frontend and backend systems. Developing and maintaining microservices architectures using frameworks like Spring Boot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end service -->
+
+</body>
+</html>
+
+    <!-- start counter -->
+    <section class="section counter" id="counter">
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-4">
+                        <h6 class="mb-0 text-muted fs-15">Counter</h6>
+                        <h2>Our Achievement</h2>
+                        <p class="para-width text-muted mb-0 fs-15">A Private Limited Company is the most commonly preferred business structure in London, UK and Pakistan. Limited liability is, in fact, the sole form of company structure permitted under Maltese company law. This structure provides shareholders with protection, as their liability is confined to the amount of capital they have invested in the company.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/heart.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <h2 class="counter_value fw-bold d-inline-block mb-0" data-bs-target="500">0</h2><span
+                                class="h2 fw-bold">K</span><span class="h2"> +</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">Appreciative Customers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/blueprint.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <h2 class="counter_value fw-bold d-inline-block mb-0" data-bs-target="210">0</h2>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">Project Successfully Delivered</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/star.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <h2 class="counter_value fw-bold d-inline-block mb-0" data-bs-target="615">0</h2><span
+                                class="h2 fw-bold">K</span><span class="h2"> +</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">Client Satisfaction Reviews</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/idea.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <h2 class="counter_value fw-bold d-inline-block mb-0" data-bs-target="4">4</h2><span
+                                class="h2"> +</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">Years of Professional Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end counter -->
+
+
+
+    <!-- start my-work -->
+    <section class="section my-work" id="work">
+        <!-- start container -->
+        <div class="container">
+            <div class="row">
+                <div class="d-flex align-items-center">
+                    <div class="left-text">
+                        <h2 class="mb-0">My Latest Contributions</h2>
+                        <p class="fs-15 text-muted">Developing software solutions that make an impact</p>
+                    </div>
+                    <div class="right-text ms-auto">
+                        <a href="#" class="text-primary border-2 border-primary border-bottom">More Work <img
+                                src="images/home/right-arrow-primary.png" alt="" class="img-fluid mb-1 ms-2"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="work-slider" id="work-slider">
+                        <div class="item">
+                            <div class="work-image position-relative">
+                                <a href="#">
+                                    <img src="images/work/img-1.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5">
+                                        <h4 class="mb-0">Web Design</h4>
+                                        <p>E-Commerce</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/img-2.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5">
+                                        <h4 class="mb-0">NFT Web Design</h4>
+                                        <p>NFT Maerketplace</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/img-3.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5 text-green">
+                                        <h4 class="mb-0">App Design</h4>
+                                        <p class="text-green-50">Mobile App </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/img-5.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5 text-blue">
+                                        <h4 class="mb-0">Software Development</h4>
+                                        <p class="text-white-50">Comprehensive Software</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/img-6.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5 text-green">
+                                        <h4 class="mb-0">Web Development</h4>
+                                        <p class="text-white-50">Web Application Development </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/img-7.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5 text-green">
+                                        <h5 class="mb-0">Java Back-end developer</h5>
+                                        <p class="text-green-50">Core Java Back-End Development Services</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/img-8.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5 text-green">
+                                        <h4 class="mb-0">App Development</h4>
+                                        <p class="text-white-50">Core App Development Services </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/img-9.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5 text-green">
+                                        <h4 class="mb-0">Cloud Technology ⚙</h4>
+                                        <p class="text-white-50">Taglines for Cloud Technology Services</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/img-10.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5 text-yellow">
+                                        <h5 class="mb-0">Fast Web 🕸 Development</h5>
+                                        <p class="text-white-50">Core Fast Web Development Services</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/img-11.png" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5 text-green">
+                                        <h4 class="mb-0">Front-end Developer </h4>
+                                        <p class="text-white-50">Taglines for Front-End Development</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end my-work -->
+
+
+    <!-- start pricing -->
+    <section class="section pricing" id="pricing">
+
+        <!-- start container -->
+        <div class="container">
+
+            <div class="shape-1">
+                <img src="images/testi/shape.png" alt="" class="img-fluid">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-4">
+                        <h6 class="mb-0 text-muted fs-15">Pricing</h6>
+                        <h2>Choose a Plan That Suits You</h2>
+                        <p class="para-width text-muted mb-0 fs-15">A Private Limited Company is the most commonly preferred business structure in London, UK and Pakistan. Limited liability is, in fact, the sole form of company structure permitted under Maltese company law. This structure provides shareholders with protection, as their liability is confined to the amount of capital they have invested in the company.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav nav-pills mb-3 justify-content-center align-items-end mt-4 pt-2" id="pills-tab1"
+                        role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-basic-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-basic" type="button" role="tab" aria-controls="pills-basic"
+                                aria-selected="true">
+                                <span class="nav-icon">
+                                    <i class="mdi mdi-account fs-24"></i>
+                                </span>
+                                <span class="fs-16 mb-0 fw-bold d-block">Individual</span>
+                                <span class="fs-14 text-muted mb-0">For Monthly Project</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-professional-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-professional" type="button" role="tab"
+                                aria-controls="pills-professional" aria-selected="false">
+                                <span class="nav-icon">
+                                    <i class="mdi mdi-wallet-travel fs-24"></i>
+                                </span>
+                                <span class="fs-16 mb-0 fw-bold d-block">Professional</span>
+                                <span class="fs-14 text-muted mb-0">For Yearly Project</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent1">
+                        <div class="tab-pane fade show active" id="pills-basic" role="tabpanel"
+                            aria-labelledby="pills-basic-tab">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="pricing-item ">
+                                        <div class="top-bar p-4 pb-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="price-icon text-primary">
+                                                    <i class="mdi mdi-airballoon fs-32"></i>
+                                                </div>
+                                                <div class="price-title ms-3">
+                                                    <h6 class="mb-0">Basic Plan 🥇</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-tag">
+                                                <h2 class="text-dark mb-0 fs-40"><sup
+                                                        class="fs-22 fw-semibold">$</sup>10<sup
+                                                        class="fs-16 fw-semibold"> /month 🔖</sup></h2>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-bar p-4 pt-3">
+                                            <ul class="list-unstyled ">
+                                                <li><i class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>2
+                                                    App and
+                                                    project</li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>400
+                                                    Gb/s
+                                                    storange</li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Free
+                                                    coustom domain
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Chat
+                                                    Support
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>No
+                                                    transaction fees
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Unlimited
+                                                    Storage
+                                                </li>
+
+                                            </ul>
+
+                                            <div class="pricing-button">
+                                                <a href="#" class="btn btn-primary w-100 mt-3 box-shadow"><i
+                                                        class="mdi mdi-check-all me-2"></i>Choose
+                                                    plane</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="pricing-item active-border">
+                                        <div class="top-bar p-4 pb-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="price-icon text-primary">
+                                                    <i class="mdi mdi-airplane fs-32"></i>
+                                                </div>
+                                                <div class="price-title ms-3">
+                                                    <h6 class="mb-0">Startup Plan 🥈</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-tag">
+                                                <h2 class="text-dark mb-0 fs-40"><sup
+                                                        class="fs-22 fw-semibold">$</sup>60<sup
+                                                        class="fs-16 fw-semibold"> /month 🔖</sup></h2>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-bar p-4 pt-3">
+                                            <ul class="list-unstyled ">
+                                                <li><i class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>2
+                                                    App and
+                                                    project</li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>400
+                                                    Gb/s
+                                                    storange</li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Free
+                                                    coustom domain
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Chat
+                                                    Support
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>No
+                                                    transaction fees
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Unlimited
+                                                    Storage
+                                                </li>
+                                            </ul>
+
+                                            <div class="pricing-button">
+                                                <a href="#" class="btn btn-dark w-100 mt-3 text-white"><i
+                                                        class="mdi mdi-check-all me-2"></i>Choose
+                                                    plane</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="pricing-item ">
+                                        <div class="top-bar p-4 pb-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="price-icon text-primary">
+                                                    <i class="mdi mdi-rocket fs-32"></i>
+                                                </div>
+                                                <div class="price-title ms-3">
+                                                    <h6 class="mb-0">Enterprise Plan 🥉</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-tag">
+                                                <h2 class="text-dark mb-0 fs-40"><sup
+                                                        class="fs-22 fw-semibold">$</sup>110<sup
+                                                        class="fs-16 fw-semibold"> /month  🔖</sup></h2>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-bar p-4 pt-3">
+                                            <ul class="list-unstyled ">
+                                                <li><i class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>2
+                                                    App and
+                                                    project 🌸</li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>400
+                                                    Gb/s
+                                                    storange 🌸</li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Free
+                                                    coustom domain 🌸
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Chat
+                                                    Support 🌸
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>No
+                                                    transaction fees 🌸
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Unlimited
+                                                    Storage 🌸
+                                                </li>
+
+                                            </ul>
+
+                                            <div class="pricing-button">
+                                                <a href="#" class="btn btn-primary w-100 mt-3 box-shadow"><i
+                                                        class="mdi mdi-check-all me-2"></i>Choose
+                                                    plane</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-professional" role="tabpanel"
+                            aria-labelledby="pills-professional-tab">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="pricing-item  active-border">
+                                        <div class="top-bar p-4 pb-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="price-icon text-primary">
+                                                    <i class="mdi mdi-airballoon fs-32"></i>
+                                                </div>
+                                                <div class="price-title ms-3">
+                                                    <h6 class="mb-0">Basic Plan 🥇</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-tag">
+                                                <h2 class="text-dark mb-0 fs-40"><sup
+                                                        class="fs-22 fw-semibold">$</sup>200<sup
+                                                        class="fs-16 fw-semibold"> /Year 🔖</sup></h2>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-bar p-4 pt-3">
+                                            <ul class="list-unstyled ">
+                                                <li><i class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>2
+                                                    App and
+                                                    project</li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>400
+                                                    Gb/s
+                                                    storange</li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Free
+                                                    coustom domain
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Chat
+                                                    Support
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>No
+                                                    transaction fees
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Unlimited
+                                                    Storage
+                                                </li>
+
+                                            </ul>
+
+                                            <div class="pricing-button">
+                                                <a href="#" class="btn btn-dark w-100 mt-3 box-shadow text-white"><i
+                                                        class="mdi mdi-check-all me-2"></i>Choose
+                                                    plane</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="pricing-item">
+                                        <div class="top-bar p-4 pb-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="price-icon text-primary">
+                                                    <i class="mdi mdi-airplane fs-32"></i>
+                                                </div>
+                                                <div class="price-title ms-3">
+                                                    <h6 class="mb-0">Basic Plan 🥈</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-tag">
+                                                <h2 class="text-dark mb-0 fs-40"><sup
+                                                        class="fs-22 fw-semibold">$</sup>300<sup
+                                                        class="fs-16 fw-semibold"> /year 🔖</sup></h2>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-bar p-4 pt-3">
+                                            <ul class="list-unstyled ">
+                                                <li><i class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>2
+                                                    App and
+                                                    project</li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>400
+                                                    Gb/s
+                                                    storange</li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Free
+                                                    coustom domain
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Chat
+                                                    Support
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>No
+                                                    transaction fees
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Unlimited
+                                                    Storage
+                                                </li>
+                                            </ul>
+
+                                            <div class="pricing-button">
+                                                <a href="#" class="btn btn-primary w-100 mt-3"><i
+                                                        class="mdi mdi-check-all me-2"></i>Choose
+                                                    plane</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="pricing-item ">
+                                        <div class="top-bar p-4 pb-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="price-icon text-primary">
+                                                    <i class="mdi mdi-rocket fs-32"></i>
+                                                </div>
+                                                <div class="price-title ms-3">
+                                                    <h6 class="mb-0">Basic Plan  🥉</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-tag">
+                                                <h2 class="text-dark mb-0 fs-40"><sup
+                                                        class="fs-22 fw-semibold">$</sup>400<sup
+                                                        class="fs-16 fw-semibold"> /year 🔖</sup></h2>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-bar p-4 pt-3">
+                                            <ul class="list-unstyled ">
+                                                <li><i class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>2
+                                                    App and
+                                                    project🔖</li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>400
+                                                    Gb/s
+                                                    storange🔖</li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Free
+                                                    coustom domain🔖
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Chat
+                                                    Support🔖
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>No
+                                                    transaction fees🔖
+                                                </li>
+                                                <li class="mt-2"><i
+                                                        class="mdi mdi-check fs-20 align-middle me-2 text-primary"></i>Unlimited
+                                                    Storage🔖
+                                                </li>
+
+                                            </ul>
+
+                                            <div class="pricing-button">
+                                                <a href="#" class="btn btn-primary w-100 mt-3 box-shadow"><i
+                                                        class="mdi mdi-check-all me-2"></i>Choose
+                                                    plane</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+
+        <div class="shape-2">
+            <img src="images/testi/shape-2.png" alt="" class="img-fluid">
+        </div>
+
+        <div class="shape-3 ">
+            <img src="images/testi/shape-3.png" alt="" class="img-fluid">
+        </div>
+
+    </section>
+    <!-- end pricing -->
+
+
+    <!-- start testimonial -->
+    <section class="section testimonial" id="testi">
+        <div class="shape-1">
+            <img src="images/testi/shape.png" alt="" class="img-fluid">
+        </div>
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h6 class="mb-0 text-muted fs-15 text-uppercase">Testimonial</h6>
+                        <h2>People talk about us 💕</h2>
+                        <p class="para-width text-muted mb-0 fs-15">A Private Limited Company is the most commonly preferred business structure in London, UK and Pakistan. Limited liability is, in fact, the sole form of company structure permitted under Maltese company law. This structure provides shareholders with protection, as their liability is confined to the amount of capital they have invested in the company.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="swiper-container py-5">
+                <div class="swiper-wrapper pt-3">
+                    <!-- start slider -->
+                    <div class="swiper-slide border-radius position-relative ">
+                        <div class="user-image">
+                            <img src="images/team/img1.png" alt="" class="avatar-md rounded-circle">
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="f-16 text-muted fs-15">" We use a customized application specifically designed a
+                                testing gnose to keep away for people. "
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="user-info text-center">
+                            <div class="user-info">
+                                <h5 class="text-black mb-0">Aaron Headshot</h5>
+                                <p class="mb-0 text-muted fs-14">Embedded analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider -->
+
+                    <!-- start slider -->
+                    <div class="swiper-slide border-radius position-relative ">
+                        <div class="user-image">
+                            <img src="images/team/img2.png" alt="" class="avatar-md rounded-circle">
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="f-16 text-muted fs-15">" We use a customized application specifically designed a
+                                testing gnose to keep away for people. "
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="user-info text-center">
+                            <div class="user-info">
+                                <h5 class="text-black mb-0">Sofia Munro</h5>
+                                <p class="mb-0 text-muted fs-14">Embedded analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider -->
+
+                    <!-- start slider -->
+                    <div class="swiper-slide border-radius position-relative ">
+                        <div class="user-image">
+                            <img src="images/team/img3.png" alt="" class="avatar-md rounded-circle">
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="f-16 text-muted fs-15">" We use a customized application specifically designed a
+                                testing gnose to keep away for people. "
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="user-info text-center">
+                            <div class="user-info">
+                                <h5 class="text-black mb-0">Theo James</h5>
+                                <p class="mb-0 text-muted fs-14">Embedded analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider -->
+
+                    <!-- start slider -->
+                    <div class="swiper-slide border-radius position-relative ">
+                        <div class="user-image">
+                            <img src="images/team/img4.png" alt="" class="avatar-md rounded-circle">
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="f-16 text-muted fs-15">" We use a customized application specifically designed a
+                                testing gnose to keep away for people. "
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="user-info text-center">
+                            <div class="user-info">
+                                <h5 class="text-black mb-0">Meet Zahra Khan</h5>
+                                <p class="mb-0 text-muted fs-14">Team lead at software house 'Arbisoft'</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider -->
+
+                     <!-- start slider -->
+                     <div class="swiper-slide border-radius position-relative ">
+                        <div class="user-image">
+                            <img src="images/team/img6.png" alt="" class="avatar-md rounded-circle">
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="f-16 text-muted fs-15">" We use a customized application specifically designed a
+                                testing gnose to keep away for people. "
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="user-info text-center">
+                            <div class="user-info">
+                                <h5 class="text-black mb-0">Mark Griffiths</h5>
+                                <p class="mb-0 text-muted fs-14">Team lead at software house SOP, Lacoste Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider -->
+
+                     <!-- start slider -->
+                     <div class="swiper-slide border-radius position-relative ">
+                        <div class="user-image">
+                            <img src="images/team/img7.png" alt="" class="avatar-md rounded-circle">
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="f-16 text-muted fs-15">" We use a customized application specifically designed a
+                                testing gnose to keep away for people. "
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="user-info text-center">
+                            <div class="user-info">
+                                <h5 class="text-black mb-0">sadaf-zohra</h5>
+                                <p class="mb-0 text-muted fs-14">Team lead at software-developer-of-pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider -->
+
+                    <!-- start slider -->
+                    <div class="swiper-slide border-radius position-relative ">
+                        <div class="user-image">
+                            <img src="images/team/img5.png" alt="" class="avatar-md rounded-circle">
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="f-16 text-muted fs-15">" We use a customized application specifically designed a
+                                testing gnose to keep away for people. "
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="user-info text-center">
+                            <div class="user-info">
+                                <h5 class="text-black mb-0">Olga Uskova</h5>
+                                <p class="mb-0 text-muted fs-14">Team lead</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider -->
+                </div>
+
+                <!-- navigation buttons -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="shape-2">
+            <img src="images/testi/shape-2.png" alt="" class="img-fluid">
+        </div>
+
+        <div class="shape-3">
+            <img src="images/testi/shape-3.png" alt="" class="img-fluid">
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end testimonial -->
+
+
+
+    <!-- start blog -->
+    <section class="section blog" id="blog">
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-4">
+                        <h6 class="mb-0 text-muted fs-15">Blog</h6>
+                        <h2>Our Regular News</h2>
+                        <p class="para-width text-muted mb-0 fs-15">A Private Limited is the most popular type of
+                            partnership Malta. The limited liability is, in fact, the only type of company allowed by
+                            Companies.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-4 mt-4 pt-2">
+                    <div class="blog-item p-4 box-shadow">
+                        <div class="blog-image">
+                            <img src="images/blog/img-1.png" alt="" class="img-fluid">
+                            <div class="blog-image-icon bg-blue">
+                                <i class="mdi mdi-lan fs-24"></i>
+                            </div>
+                        </div>
+                        <div class="blog-content mt-5">
+                            <!-- <p class="text-muted fw-semibold mb-2">May 25, 2021</p> -->
+                            <a href="#" ><h5>We makes UI/UX design very easy for you.</h5></a>
+                            <p class="fs-15 text-muted">He nicked it tickety boo harry the cras bargy chap mush spiffing
+                                spend a penny.</p>
+                            <a href="#" class="text-dark fw-semibold">Learn more <i
+                                    class="mdi mdi-arrow-right fs-16"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 pt-2">
+                    <div class="blog-item p-4 box-shadow">
+                        <div class="blog-image">
+                            <img src="images/blog/img-2.png" alt="" class="img-fluid">
+                            <div class="blog-image-icon bg-secondary">
+                                <i class="mdi mdi-responsive fs-24"></i>
+                            </div>
+                        </div>
+                        <div class="blog-content mt-5">
+                            <!-- <p class="text-muted fw-semibold mb-2">May 25, 2021</p> -->
+                            <a href="#"><h5>Current world design trends know easily.</h5></a>
+                            <p class="fs-15 text-muted">He nicked it tickety boo harry the cras bargy chap mush spiffing
+                                spend a penny.</p>
+                            <a href="#" class="text-dark fw-semibold">Learn more <i
+                                    class="mdi mdi-arrow-right fs-16"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 pt-2">
+                    <div class="blog-item p-4 box-shadow">
+                        <div class="blog-image">
+                            <img src="images/blog/img-3.png" alt="" class="img-fluid">
+                            <div class="blog-image-icon bg-primary">
+                                <i class="mdi mdi-vector-combine fs-24"></i>
+                            </div>
+                        </div>
+                        <div class="blog-content mt-5">
+                            <!-- <p class="text-muted fw-semibold mb-2">May 25, 2021</p> -->
+                            <a href="#"><h5>We calculate clients demand for research.</h5></a>
+                            <p class="fs-15 text-muted">He nicked it tickety boo harry the cras bargy chap mush spiffing
+                                spend a penny.</p>
+                            <a href="#" class="text-dark fw-semibold">Learn more <i
+                                    class="mdi mdi-arrow-right fs-16"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end blog -->
+
+
+
+    <!-- start contact -->
+    <section class="contact pt-5 pb-0" id="contact">
+        <!-- start container -->
+        <div class="container">
+
+            <div class="shape-1">
+                <img src="images/testi/shape.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="contact-item">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="contact-info">
+                            <div class="mb-4">
+                                <h3>Let's Connect 📲</h3>
+                                <p class="text-muted mb-0">Looking for help? Fill the form and start a new adventure.
+                                </p>
+                            </div>
+
+                            <hr>
+
+                            <div class="info-content mt-4">
+                                <h6>Address :</h6>
+                                <div class="d-flex">
+                                    <div class="icon">
+                                        <i class="mdi mdi-home-outline fs-24 text-primary"></i>
+                                    </div>
+                                    <div class="icon-content ms-3">
+                                        <p class="mb-0 fs-15">
+                                            <a href="https://www.google.com/maps?q=123+Baker+Street,+Westminster,+London+NW1+6XE,+United+Kingdom" target="_blank" class="text-decoration-none text-primary">
+                                                123 Baker Street, Westminster,<br>
+                                                London NW1 6XE, United Kingdom
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-content mt-4">
+                                <h6>Address :</h6>
+                                <div class="d-flex">
+                                    <div class="icon">
+                                        <i class="mdi mdi-home-outline fs-24 text-primary"></i>
+                                    </div>
+                                    <div class="icon-content ms-3">
+                                        <p class="mb-0 fs-15">
+                                            <a href="https://www.google.com/maps?q=Plot+Number+305,+Expo+Tower,+Hall+Number+1,+Basement,+Johar+Town,+Lahore,+Pakistan+54782" target="_blank" class="text-decoration-none text-primary">
+                                                Plot Number 305, Expo Tower, Hall Number 1, Basement,<br>
+                                                Johar Town, Lahore, Pakistan 54782
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+
+
+                            <div class="info-content mt-4 pt-2">
+                                <h6>Phone :</h6>
+                                <div class="d-flex">
+                                    <div class="icon">
+                                        <i class="mdi mdi-phone-outline fs-24 text-primary"></i>
+                                    </div>
+                                    <div class="icon-content ms-3">
+                                        <p class="mb-0 fs-15">
+                                            <a href="https://wa.me/923205484196" target="_blank" class="text-decoration-none text-primary">
+                                                (+92) 03205484196
+                                            </a>
+                                        </p>
+                                        <p class="mb-0 fs-15">
+                                            <a href="https://wa.me/923205484196" target="_blank" class="text-decoration-none text-primary">
+                                                (+92) 03205484196
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+
+                            <div class="info-content mt-4 pt-2">
+                                <h6>Support :</h6>
+                                <div class="d-flex">
+                                    <div class="icon">
+                                        <i class="mdi mdi-email-outline fs-24 text-primary"></i>
+                                    </div>
+                                    <div class="icon-content ms-3">
+                                        <p class="mb-0 fs-15">
+                                            <a href="mailto:fazalabbas.dev@gmail.com">fazalabbas.dev@gmail.com</a>
+                                        </p>
+                                        <p class="mb-0 fs-15">
+                                            <a href="mailto:contact.fazalabbas7@gmail.com">contact.fazalabbas7@gmail.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-7 ">
+                        <div class="custom-form mt-4 ">
+                            <form method="post" name="myForm" onsubmit="return validateForm()">
+
+                                <h6 class="mb-0 text-muted">Let's talk</h6>
+                                <h3>Enter your project details</h3>
+                                <p class=" fs-15 text-muted">Content here, content here', making it look like
+                                    readable English. Many desktop publishing packages.</p>
+                                <p id="error-msg" style="opacity: 1;">
+                                    <!-- <div class="alert alert-warning">*Please enter a Name*</div> -->
+                                </p>
+
+
+                                <div id="simple-msg"></div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input name="name" id="name" type="text" class="form-control contact-form"
+                                                placeholder="Your name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input name="email" id="email" type="email"
+                                                class="form-control contact-form" placeholder="Your email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-control contact-form" id="subject"
+                                                placeholder="Your Subject..">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-2">
+                                            <textarea name="comments" id="comments" rows="4"
+                                                class="form-control contact-form h-auto"
+                                                placeholder="Your message..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-lg-12 d-grid">
+                                        <input type="submit" id="submit" name="send"
+                                            class="submitBnt btn btn-rounded btn-primary" value="Send Message">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shape-2">
+                <img src="images/testi/shape-2.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="shape-3 ">
+                <img src="images/testi/shape-3.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end contact -->
+
+
+    <!-- start footer -->
+    <section class=" footer">
+        <!-- start container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="mt-5">
+                        <a class=" logo text-uppercase" href="index.html">
+                            <img src="images/logo-light.png" class="logo-light" alt="" height="32">
+                            <!-- <img src="images/logo-light.png" class="logo-dark" alt="" height="28"> -->
+                        </a>
+                        <p class="fs-15 text-white-50 mt-4">A Private Limited is the most popular type of partnership
+                            Malta.
+                            The limited liability is, in fact, the only type of company allowed by Companies.</p>
+
+                        <div class="icon-item mt-4">
+                            <div class="d-flex">
+                                <a href="#">
+                                    <div class="social-icon facebook avatar-xs">
+                                        <i class="mdi mdi-facebook "></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon instagram avatar-xs">
+                                        <i class="mdi mdi-instagram "></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon twitter avatar-xs">
+                                        <i class="mdi mdi-twitter"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon linkedin avatar-xs">
+                                        <i class="mdi mdi-linkedin"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon pinterest avatar-xs">
+                                        <i class="mdi mdi-pinterest"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-4">
+                    <h5 class="text-white">Company</h5>
+
+                    <ul class="footer-text list-unstyled mt-4">
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>Security & Provciy</a></li>
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>Support</a></li>
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>Term & Condition</a></li>
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>Contact</a></li>
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>About Us</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3 mt-4">
+                    <h5 class="text-white">Linkedin</h5>
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <div class="linkedin-box mt-4">
+                                <p class="mb-0 text-white-50 fs-15 mb-2">The full monty spiffing good time .</p>
+                                <a href="#" class="fs-15">fazalabbas.dev@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="linkedin-content d-flex align-items-center">
+                        <div class="icon">
+                            <i class="mdi mdi-linkedin text-white fs-40"></i>
+                        </div>
+                        <div class="icon-content ms-2">
+                            <a href="#" class="text-white-50">Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <h5 class="text-white">Sign up</h5>
+                    <p class="mb-0 text-white-50 mt-4">Follow our newsletter to stay updated about agency.</p>
+                    <div class="input-group my-3">
+                        <input type="text" class="form-control p-3" placeholder="subscribe" aria-label="subscribe"
+                            aria-describedby="basic-addon2">
+                        <a href="#" class="input-group-text bg-primary text-white px-4" id="basic-addon2">Go</a>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+
+    <section class="bottom-footer py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <p class="mb-0 text-center text-muted">©
+                        <script>document.write(new Date().getFullYear())</script> Harold. Design with <i
+                            class="mdi mdi-heart text-danger"></i> by <a href="https://themesdesign.in/" target="_blank"
+                            class="text-muted">Themesdesign.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end footer -->
+
+
+    <!--Bootstrap Js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slider Js -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <!-- conter -->
+    <script src="js/counter.init.js"></script>
+
+    <!-- App Js -->
+    <script src="js/app.js"></script>
+
+</body>
+
+
+<!-- Mirrored from themesdesign.in/harold/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Dec 2024 15:56:25 GMT -->
+</html>
